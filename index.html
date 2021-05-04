@@ -1,0 +1,125 @@
+<!--Hecho por Santiago Estiben Buitrago Díaz-->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Practica Web</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header" id="inicio">
+            <img src="img/menu.svg" alt="" class="menu">
+            <nav class="menu-navegacion">
+                   <a href="#inicio">Inicio</a>
+                   <a href="#pasos">Pasos</a>
+                   <a href="#hosting">Hosting en Colombia</a> 
+            </nav>
+            <div class="contenedor head">
+                <h1 class="titulo">WEB</h1>
+            </div>
+        </header>
+        <main>
+            <section class="contenedor" id="pasos">
+            <h2 class="subtitulo">Pasos para publicar una página web en la red</h2>
+            <div class="contenedor-pasos">
+                <img src="img/hots.svg" alt="">
+                <div class="hots-pasos">
+                    <div class="pasos">
+                        <h3 class="n-pasos"><span class="number">1. </span>Elegir un servicio de Hosting</h3>
+                        <p>Lo primero que se debe elegir al momento de subir la página
+                         web a la red será el proveedor de hosting web, se debe elegir a un buen proveedor de hosting el cual integre las características 
+                         clave para impulsar el proyecto web. Aspectos a tener en cuenta:</p>
+                         <h4>•Soporte en vivo:</h4>
+                         <p>Se debe buscar un proveedor de hosting web que brinde soporte, bien sea mediante chat en vivo o en una línea telefónica, esto con el objetivo que, si se presenta un inconveniente, este se resolverá fácilmente.</p>
+                         <h4>•Control sobre tu espacio de hosting web:</h4>
+                         <p>Se debe tener siempre el mayor control posible sobre la cuenta, así se presentarán menos problemas cuando el sitio web empiece a crecer. </p>
+                         <h4>•Espacio para el crecimiento: </h4>
+                         <p>Siempre se debe apostar a largo plazo, se debe buscar un proveedor que tenga soluciones escalables en caso de que el sitio web requiera mayor potencia.</p>
+                         <h4>•Garantía de devolución de dinero: </h4>
+                         <p>Revisar la política de reembolso de el proveedor, esto nos dará tiempo para probar el servicio.</p>
+                         <h4>•Beneficios adicionales: </h4>
+                         <p>Buscar un buen proveedor de hosting el cual ofrezca ofertas a sus usuarios.</p>
+                        </div>
+                        <div class="pasos">
+                            <h3 class="n-pasos"><span class="number">2. </span>Registrar un nombre de dominio</h3>
+                            <p>Es la dirección que se le da a la pagina web, mediante la cual puede ser encontrada por quien lo desee.<br>
+                                •Dominio Gratuito: www.empresadehosting.com/usuario/web/index.html<br>
+                                •Dominio Pago:miweb.com
+                            </p>
+                        </div>
+                    <div class="pasos">
+                        <h3 class="n-pasos"><span class="number">3. </span>Elegir el metodo para subir el sitio web</h3>
+                        <p>Es importante elegir la herramienta adecuada para subir la pagina web, existen varias herramientas, pero las más importantes son:</p>
+                         <h4>•Administradores de archivos: </h4>
+                         <p>Es una herramienta basada en navegador web, tiene todas las características clave para encargarse de los archivos y directorios, pero este presenta un limite de carga, si la copia de seguridad tiene mas de 256 Mb se deben usar otras herramientas.</p>
+                         <h4>•Protocolo de transferencia de archivos (FTP): </h4>
+                         <p>En esta no existen limites de tamaño, se pueden subir copias de seguridad sin importar el tamaño. </p>
+                         <h4>•Importador automático de sitios web:  </h4>
+                         <p>En este se puede extraer u archivo web de hasta 256 Mb directamente al directorio public_html.</p>
+                    </div>
+                    <div class="pasos">
+                        <h3 class="n-pasos"><span class="number">4. </span>Subir el archivo del sitio y extraerlo</h3>
+                        <p>Una vez ya realizados lo pasos anteriores subiremos el archivo, daremos clic en el icono de Subir archivos, luego se debe seleccionar el archivo del sitio web en la computadora e importarlo al servidor, por ultimo se usa la función de extraer para descomprimir el archivo. Esto si se realiza por medio de administradores de archivos.
+                            Si se usa FTP con FileZilla se debe extraer el archivo desde la computadora, luego se podrán transferir todos los archivos directamente a public_html.</p>
+                        </div>
+                    <div class="pasos">
+                        <h3 class="n-pasos"><span class="number">5. </span>Asegurarse de que todos los archivos estén en public_html</h3>
+                        <p>Se debe asegurar que todos los archivos estén ubicados en el directorio raíz del dominio, el cual es public_html.</p>
+                        </div>
+                    <div class="pasos">
+                        <h3 class="n-pasos"><span class="number">6. </span>Importar la base de datos</h3>
+                        <p>Si la pagina web utiliza bases de datos se deben realizar los siguientes pasos:</p>
+                         <p>•Crear una nueva base de datos y usuario MySQL.</p>
+                         <p>•Acceder a la base de datos recién creada a través de phpMyAdmin.</p>
+                         <p>•Utilizar la sección Import para subir el archivo de copia de seguridad.</p>
+                         <p>•Actualizar los detalles de conexión de la base de datos MySQL (database name, host, user, password) en tus archivos de configuración. </p>
+                        </div>
+                    <div class="pasos">
+                        <h3 class="n-pasos"><span class="number">7. </span>Comprobar que el sitio web funcione correctamente</h3>
+                        <p>Luego de subir todos los archivos del sitio web, se debe revisar el funcionamiento del mismo, entrando al dominio adquirido mediante un navegador web. </p>
+                        </div>
+                </div>
+            </div>
+            </section>
+            <section class="gallery" id="hosting">
+                <div class="contenedor">
+                    <h2 class="subtitulo">Los mejores proveedores Hosting en Colombia</h2>
+                    <div class = "contenedor-colombia">
+                        <img src="img/uno.jpeg" alt="" class="img-galeria">
+                        <img src="img/dos.png" alt="" class="img-galeria">
+                        <img src="img/tres.png" alt="" class="img-galeria">
+                        <img src="img/cuatro.png" alt="" class="img-galeria">
+                        <img src="img/cinco.jpg" alt="" class="img-galeria">
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="contacto">
+            <div class="contenedor-footer">
+                <div class="contact-us">
+                    <h2 class="brand">Sistemas Distribuidos</h2>
+                    <p>Santiago Estiben Buitrago Díaz</p>
+                </div>
+                <div class="social-media">
+                    <a href="./" class="social-media-icon">
+                        <i class='bx bxl-facebook-circle'></i>
+                    </a>
+                    <a href="./" class="social-media-icon">
+                        <i class='bx bxl-twitter' ></i>
+                    </a>
+                    <a href="./" class="social-media-icon">
+                        <i class='bx bxl-instagram-alt' ></i>
+                    </a>
+                </div>
+            </div>
+            <div class="line"></div>
+        </footer>
+
+        <script src="js/menu.js"></script>
+        <script src="js/ligthbox.js"></script>
+    </body>
+</html>
